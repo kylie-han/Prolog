@@ -6,6 +6,7 @@ export default {
     USER_TOKEN: "",
   },
 
+  // IS_LOGED_IN: localStorage["userdata.email"] ? true : false,
   IS_LOGED_IN: localStorage["email"] ? true : false,
 
   ERROR: {
@@ -23,6 +24,7 @@ export default {
       FINDUSERBYEMAIL: "finduserbyemail",
     },
     POST: {
+      LIST: "list",
       MANAGEPORTFOLIO: "manageportfolio",
       MANAGEEXPERIENCE: "manageexperience",
       PORTFOLIODETAILS: "portfoliodetails",

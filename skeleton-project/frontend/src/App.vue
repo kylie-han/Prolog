@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header :isHeader="isHeader" />
+    <Header :isHeader="isHeader" class="mb-5" />
     <Navbar />
     <router-view />
   </div>
@@ -12,6 +12,7 @@
   crossorigin="anonymous"
 ></script>
 <script>
+import "./assets/css/style.scss";
 import Header from "./components/common/Header.vue";
 import Navbar from "./components/common/Navbar.vue";
 import constants from "./lib/constants";
@@ -22,6 +23,11 @@ export default {
     Header,
     Navbar,
   },
+  // created() {
+  //   this.$store.SERVER_URL = "http://localhost:8080/api";
+  //   let url = this.$route.name;
+  //   this.checkUrl(url);
+  // },
   watch: {
     $route(to) {
       this.checkUrl(to.name);
@@ -49,21 +55,12 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
-* {
-  font-family: "Noto Sans KR", sans-serif;
-  word-break: keep-all;
-}
 #app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
   background-color: #eee;
-}
-html {
-  background-color: #eee;
-}
-a:link {
-  color: #000;
-}
-a:visited {
-  color: #000;
 }
 </style>

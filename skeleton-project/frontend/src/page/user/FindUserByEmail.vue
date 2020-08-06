@@ -8,12 +8,14 @@
       @keyup.enter="FindUserByEmail"
       type="text"
     ></b-form-input>
-    <b-button class="mr-2" pill @click="FindUid">아이디 찾기</b-button>
-    <b-button pill @click="FindPassword">비밀번호 찾기</b-button>
+
+    <button class="btn btn--back btn--login" @click="FindUid">아이디 찾기</button>
+    <button class="btn btn--back btn--login" @click="FindPassword">비밀번호 찾기</button>
   </div>
 </template>
 
 <script>
+import "../../assets/css/user.scss";
 import constants from "../../lib/constants.js";
 import axios from "axios";
 

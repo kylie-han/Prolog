@@ -9,6 +9,7 @@ import Join from "../page/user/Join.vue";
 import Update from "../page/user/Update.vue";
 
 // 포스트
+import List from "../page/post/List.vue";
 
 // PageNotFound
 import PageNotFound from "../page/post/PageNotFound.vue";
@@ -42,9 +43,11 @@ export default new Router({
       component: Join,
     },
     // 포스트
-    // {
-    // path: "/post/",
-    // },
+    {
+      path: "/post/list",
+      name: constants.URL_TYPE.POST.LIST,
+      component: List,
+    },
     // PageNotFound
     {
       path: "*",
