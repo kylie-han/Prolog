@@ -31,10 +31,20 @@ public class UserUpdateRequest {
     @Pattern(regexp = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d$@$!%*#?&]{8,}$")
     String password;
 
+    
+    @ApiModelProperty(required = true)
+    @NotNull
+    String uid;
+
+    @ApiModelProperty(required = true)
+    @NotNull
+    String nickname;
+
     public User toEntity(String uid) {
         return User.builder().uid(uid)
                 // .nickname(nickname)
-                .email(email).password(password).build();
+                .email(email).password(password).uid(uid).nickname(nickname)
+                .build();
     }
 
 }
