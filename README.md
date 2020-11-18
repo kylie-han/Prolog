@@ -16,7 +16,7 @@
 
 > IT직무 취업준비생을 위한 포트폴리오 관리용 블로그
 
-[Prolog 소개 영상](https://www.youtube.com/watch?v=oC1O6hon53w&feature=youtu.be)
+######**[Prolog 소개 영상](https://www.youtube.com/watch?v=oC1O6hon53w&feature=youtu.be)**
 
 IT직무 취준생들은 다양한 프로젝트 경험을 쌓으며 취업준비를 합니다.
 
