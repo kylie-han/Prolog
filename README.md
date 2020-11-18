@@ -16,7 +16,7 @@
 
 > IT직무 취업준비생을 위한 포트폴리오 관리용 블로그
 
-![20201118103043-a31e0b5bdb gif-2-mp4 com](https://user-images.githubusercontent.com/60127173/99498939-814f1980-29bb-11eb-9046-d4ef91f5c761.gif)
+![Prolog 소개 영상](https://www.youtube.com/watch?v=oC1O6hon53w&feature=youtu.be)
 
 IT직무 취준생들은 다양한 프로젝트 경험을 쌓으며 취업준비를 합니다.
 
@@ -27,6 +27,7 @@ IT직무 취준생들은 다양한 프로젝트 경험을 쌓으며 취업준비
 
 ## 기능
 
+![20201118103043-a31e0b5bdb gif-2-mp4 com](https://user-images.githubusercontent.com/60127173/99498939-814f1980-29bb-11eb-9046-d4ef91f5c761.gif)
 
 
 
