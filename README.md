@@ -82,7 +82,7 @@ IT직무 취준생들은 다양한 프로젝트 경험을 쌓으며 취업준비
 ## TEAM
 
 - 박석우 (팀장) : frontend , 발표
-- 박재성 (자문, CTO) : frontend, baskend, 배포
+- 박재성 (자문, CTO) : frontend, bakend, 배포
 - 한지혜(서기) : backend , 발표, CICD
 - 이솔 (발표자료) : frontend , 영상, 로고 제작
 
