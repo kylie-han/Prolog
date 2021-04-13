@@ -22,7 +22,8 @@ Vue.use(VModal, { dynamicDefault: { draggable: true, resizable: true } });
 // Vue.prototype.$SERVER_URL = "/api";
 // Vue.prototype.$PAGE_URL = "/#";
 // 개발 - "http://localhost:8080/api"
-Vue.prototype.$SERVER_URL = "http://localhost:8080/api";
+// Vue.prototype.$SERVER_URL = "http://localhost:8080/api";
+Vue.prototype.$SERVER_URL = process.env;
 
 /* eslint-disable no-new */
 new Vue({
