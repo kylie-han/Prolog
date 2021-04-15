@@ -1,17 +1,16 @@
 package com.web.blog;
 
-import com.web.blog.property.FileUploadProperties;
+import com.web.blog.property.*;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
 
 @SpringBootApplication
-@EnableConfigurationProperties({ FileUploadProperties.class })
+@EnableConfigurationProperties({ FileUploadProperties.class,URLProperties.class })
 public class WebBlogApplication implements CommandLineRunner {
 
 	public static void main(final String[] args) {
@@ -26,9 +25,8 @@ public class WebBlogApplication implements CommandLineRunner {
 	}
 
 	@Override
-	@Transactional
-	public void run(final String... args) throws Exception {
-
+	public void run(String... args) throws Exception {
+		
 	}
 
 }

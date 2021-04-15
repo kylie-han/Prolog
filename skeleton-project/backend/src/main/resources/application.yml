@@ -1,0 +1,53 @@
+spring:
+    profiles:
+        active: development
+    datasource:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost/ssafy_sk
+        username: root
+        password: 1234
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: ssafyproject124@gmail.com
+        password: sbmxsddsvlvdgwkt
+        properties:
+            mail:
+                smtp:
+                    starttls:
+                        enable: true
+                    auth: true
+    jpa:
+        properties:
+            hibernate:
+                show_sql: false
+                # ddl-auto: create
+        # generate-ddl: true
+## Multipart properties
+    servlet:
+        multipart:
+          enabled: true
+          max-file-size: 200MB
+          max-request-size: 215MB 
+
+server:
+  servlet:
+    context-path: /api
+    
+## File Storage Properties
+
+--- #development
+spring:
+    profiles: development
+file:
+    upload-dir: /UPLOAD_FILES/Prolog
+mail:
+    url: http://localhost:3000/
+
+--- #production
+spring:
+    profiles: production
+file:
+    upload-dir: /home/ubuntu/Documents/UPLOAD_FILES/Prolog
+mail:
+    url: ec2-3-36-200-119.ap-northeast-2.compute.amazonaws.com/
