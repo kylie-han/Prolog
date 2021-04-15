@@ -40,7 +40,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
-@Service
+@Service("fileUploadDownloadService")
 public class FileUploadDownloadServiceImpl implements FileUploadDownloadService {
     private Path fileLocation;
 
@@ -56,6 +56,7 @@ public class FileUploadDownloadServiceImpl implements FileUploadDownloadService 
     ResponseEntity<BasicResponse> response = null;
     BasicResponse result = new BasicResponse();
 
+    @Autowired
     public FileUploadDownloadServiceImpl(FileUploadProperties prop) {
         this.fileLocation = Paths.get(prop.getUploadDir()).toAbsolutePath().normalize();
 
