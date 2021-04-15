@@ -48,6 +48,6 @@ mail:
 spring:
     profiles: production
 file:
-    upload-dir: /home/Documents/UPLOAD_FILES/Prolog
+    upload-dir: /home/ec2-user/Documents/UPLOAD_FILES/Prolog
 mail:
     url: ec2-3-36-200-119.ap-northeast-2.compute.amazonaws.com/
