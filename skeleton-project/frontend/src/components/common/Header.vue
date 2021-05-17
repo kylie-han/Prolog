@@ -102,7 +102,7 @@ export default {
       this.$router.push({ path: `/${localStorage["uid"]}` });
     },
     copyUrl() {
-      var url = `http://i3a605.p.ssafy.io/#/${localStorage["uid"]}`;
+      var url = `http://http://ec2-3-36-200-119.ap-northeast-2.compute.amazonaws.com/#/${localStorage["uid"]}`;
       // window.clipboardData.setData("Text", url);
       const copyURL = document.createElement("input");
       copyURL.value = url;
