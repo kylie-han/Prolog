@@ -1,6 +1,6 @@
 spring:
     profiles:
-        active: development
+        active: production
     datasource:
         driverClassName: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://localhost/ssafy_sk
