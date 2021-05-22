@@ -21,8 +21,8 @@ spring:
         properties:
             hibernate:
                 show_sql: false
-                # ddl-auto: create
-        # generate-ddl: true
+                ddl-auto: auto
+        generate-ddl: true
 ## Multipart properties
     servlet:
         multipart:

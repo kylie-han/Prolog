@@ -1,0 +1,7 @@
+FROM openjdk:8-jdk-alpine
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
+ARG SPRING_PROFILES_ENV
+RUN echo $SPRING_PROFILES_ENV
+ENV SPRING_PROFILES_ACTIVE=$SPRING_PROFILES_ENV
+ENTRYPOINT ["java","-jar","/app.jar"]
