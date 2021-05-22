@@ -3,7 +3,7 @@ spring:
         active: production
     datasource:
         driverClassName: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://localhost/ssafy_sk
+        url: jdbc:mysql://localhost/ssafy_test
         username: root
         password: 1234
     mail:
@@ -21,7 +21,7 @@ spring:
         properties:
             hibernate:
                 show_sql: false
-                ddl-auto: auto
+                ddl-auto: update
         generate-ddl: true
 ## Multipart properties
     servlet:

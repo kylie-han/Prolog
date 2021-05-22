@@ -41,8 +41,6 @@ public class PortfolioServiceImpl implements PortfolioService {
     @Autowired
     TagDao tagDao;
 
-    // @Autowired
-    // private PortfolioTagDao portfolioTagDao;
     @Autowired
     FileDAO fileDAO;
 

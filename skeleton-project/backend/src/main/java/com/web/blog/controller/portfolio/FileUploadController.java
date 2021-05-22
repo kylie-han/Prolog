@@ -22,8 +22,6 @@ import io.swagger.annotations.ApiOperation;
 @CrossOrigin(origins = { "*" }, maxAge = 6000)
 @RestController
 public class FileUploadController {
-    // private static final Logger logger =
-    // LoggerFactory.getLogger(FileUploadController.class);
 
     @Autowired
     private FileUploadDownloadService service;
@@ -60,19 +58,4 @@ public class FileUploadController {
 
         return service.deleteFile(id);
     }
-
-    // // 프로젝트별로 파일리스트를 리턴 혹은 사용자별로 파일리스트를 리턴
-    // @GetMapping("/uploadFiles")
-    // @ApiOperation(value = "업로드 된 파일 리스트를 볼 수 있다.")
-    // public Iterable<UploadFile> getUploadFileList() {
-    // return service.getFileList();
-    // }
-    // 파일이 없을 경우 없다는 리턴을 해줘야함
-    // @GetMapping("/uploadFile/{id}")
-    // @ApiOperation(value = "업로드 된 파일의 db내의 id(int)로 파일이 존재하는 지 확인 할 수 있다.")
-    // public Optional<UploadFile> getUploadFile(@PathVariable int id) {
-    // return service.getUploadFile(id);
-    // }
-
-    // 파일 다운로드시 한글 깨지는 오류 수정
 }

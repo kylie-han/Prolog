@@ -12,19 +12,42 @@ import org.springframework.web.multipart.MultipartFile;
 @Service
 public interface FileUploadDownloadService {
 
-    // 파일하나 업로드
+    /**
+     * 파일 하나 업로드
+     * @param pid
+     * @param file
+     * @return
+     */
     public ResponseEntity<BasicResponse> storeFile(int pid, MultipartFile file);
 
-    // 여러파일 업로드
+    /**
+     * 여러 파일 업로드
+     * @param pid
+     * @param files
+     * @return
+     */
     public ResponseEntity<BasicResponse> uploadMultipleFiles(int pid, MultipartFile[] files);
-
-    // 파일 다운로드
+    /**
+     * 파일 다운로드
+     * @param fileName
+     * @param request
+     * @return
+     */
     public ResponseEntity<Resource> downloadFile(String fileName, HttpServletRequest request);
-
-    // 파일 삭제
+    /**
+     * 파일 삭제
+     * @param id
+     * @return
+     */
     public ResponseEntity<BasicResponse> deleteFile(int id);
 
-    // 압축파일 다운로드
+    /**
+     * 압축파일 다운로드
+     * @param request
+     * @param uid
+     * @param pid
+     * @return
+     */
     public ResponseEntity<Object> downloadPortfolio(HttpServletRequest request, String uid, int pid);
 
 }

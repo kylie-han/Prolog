@@ -139,7 +139,7 @@ public class FileUploadDownloadServiceImpl implements FileUploadDownloadService 
                     extension = FilenameUtils.getExtension(file.getOriginalFilename());
                     fileName = FilenameUtils.getBaseName(file.getOriginalFilename()) + "_" + now + "." + extension;
                     fileExist = fileDAO.findUploadFileByFileName(fileName);
-                    // 파일명 유효성검사->해야함..
+                    // 파일명 유효성검사
                     if (!fileName.matches("")) {
                         if (!fileExist.isPresent()) {
                             Path targetLocation = this.fileLocation.resolve(fileName);
@@ -234,7 +234,6 @@ public class FileUploadDownloadServiceImpl implements FileUploadDownloadService 
             result.status = false;
             response = new ResponseEntity<>(result, HttpStatus.OK);
         }
-        // 둘 다 지웠으면 ok, 둘중하나라도 지워지지 않으면......다시 살려?//흐으으으음
 
         return response;
     }

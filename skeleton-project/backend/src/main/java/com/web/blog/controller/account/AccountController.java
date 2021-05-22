@@ -124,22 +124,4 @@ public class AccountController {
         return userService.deleteProfile(uid);
     }
 
-    // public static String byteArrayToBinaryString(byte[] b) {
-    // StringBuilder sb = new StringBuilder();
-    // for (int i = 0; i < b.length; ++i) {
-    // sb.append(byteToBinaryString(b[i]));
-    // }
-    // return sb.toString();
-    // }
-
-    // public static String byteToBinaryString(byte n) {
-    // StringBuilder sb = new StringBuilder("00000000");
-    // for (int bit = 0; bit < 8; bit++) {
-    // if (((n >> bit) & 1) > 0) {
-    // sb.setCharAt(7 - bit, '1');
-    // }
-    // }
-    // return sb.toString();
-    // }
-
 }

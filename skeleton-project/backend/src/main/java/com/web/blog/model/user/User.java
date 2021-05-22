@@ -2,24 +2,26 @@
 
 package com.web.blog.model.user;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
-import java.time.LocalDateTime;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
+@Table(name = "user")
 public class User {
 
     @Id
