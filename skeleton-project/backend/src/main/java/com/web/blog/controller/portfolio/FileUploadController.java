@@ -27,14 +27,14 @@ public class FileUploadController {
     private FileUploadDownloadService service;
 
     @PostMapping("/uploadFile/{pid}")
-    @ApiOperation(value = "폼태그의 파일 업로드 방식으로 파일을 업로드 할 수 있다. - uploadMultipleFiles 완료되면 삭제할거야")
+    @ApiOperation(value = "폼태그의 파일 업로드 방식으로 파일을 업로드 할 수 있다.")
     public ResponseEntity<BasicResponse> uploadFile(@PathVariable int pid, @RequestParam("file") MultipartFile file) {
 
         return service.storeFile(pid, file);
     }
 
     @PostMapping("/uploadMultipleFiles")
-    @ApiOperation(value = "파일들의 배열(list)로 여러 파일을 업로드 할 수 있다. - 이게 파일업로드 api입니다아아아아아아아아아아아아아")
+    @ApiOperation(value = "파일들의 배열(list)로 여러 파일을 업로드 할 수 있다.")
     public ResponseEntity<BasicResponse> uploadMultipleFiles(@RequestParam int pid,
             @RequestParam("file") MultipartFile[] file) { // service에선 file->files
         return service.uploadMultipleFiles(pid, file);
